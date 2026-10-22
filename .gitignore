@@ -1,0 +1,15 @@
+# dependencies / tooling
+node_modules/
+.netlify/
+.vercel/
+.cache/
+
+# local secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
