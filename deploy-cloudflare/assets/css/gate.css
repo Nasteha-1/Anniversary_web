@@ -1,0 +1,176 @@
+/* =========================================================
+   🔐 SECRET GATE — password + secret questions
+   ========================================================= */
+.gate {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: clamp(18px, 5vw, 40px);
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(45, 16, 96, .92), transparent 62%),
+    radial-gradient(90% 70% at 50% 100%, rgba(224, 71, 127, .38), transparent 64%),
+    var(--black);
+  overflow-y: auto;
+  transition: opacity .8s var(--ease), visibility .8s;
+}
+.gate.is-gone { opacity: 0; visibility: hidden; pointer-events: none; }
+
+.gate__screen { display: none; width: 100%; }
+.gate__screen.is-active { display: block; animation: gateIn .8s var(--ease) both; }
+@keyframes gateIn { from { opacity: 0; transform: translateY(26px) scale(.98); } }
+
+.gate__card {
+  width: min(94vw, 620px);
+  margin: 0 auto;
+  padding: clamp(28px, 6vw, 52px);
+  text-align: center;
+  border: 1px solid var(--stroke-2);
+  border-radius: 28px;
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, .08), rgba(255, 255, 255, .02)),
+    rgba(12, 5, 26, .82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, .6);
+}
+.gate__card.is-shake { animation: gateShake .45s ease; }
+@keyframes gateShake {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-9px); }
+  75%      { transform: translateX(9px); }
+}
+
+.gate__kicker {
+  margin: 0 0 14px;
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--pink);
+}
+.gate__title {
+  margin: 0 0 16px;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 4.4vw, 2.2rem);
+  line-height: 1.28;
+  color: #fff;
+}
+.gate__lead {
+  margin: 0 0 28px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--silver-soft);
+}
+.gate__title--win {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: clamp(1.45rem, 4.6vw, 2.35rem);
+  letter-spacing: .015em;
+  line-height: 1.22;
+  background: var(--grad-pink);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Password ---------- */
+.gate__form { display: grid; gap: 10px; justify-items: center; }
+.gate__label {
+  font-size: .82rem;
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--silver-soft);
+}
+.gate__input {
+  width: min(100%, 420px);
+  padding: 16px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke-2);
+  background: rgba(255, 255, 255, .06);
+  color: #fff;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-align: center;
+  transition: border-color .3s ease, box-shadow .3s ease, background .3s ease;
+}
+.gate__input::placeholder { color: rgba(217, 213, 228, .35); letter-spacing: .2em; }
+.gate__input:focus {
+  outline: none;
+  border-color: var(--pink);
+  box-shadow: 0 0 0 4px rgba(255, 111, 165, .18);
+  background: rgba(255, 255, 255, .09);
+}
+.gate__input.is-bad { border-color: #ff6b8a; box-shadow: 0 0 0 4px rgba(255, 107, 138, .16); }
+.gate__input.is-good { border-color: #6ee7a8; box-shadow: 0 0 0 4px rgba(110, 231, 168, .16); }
+.gate__msg {
+  min-height: 1.4em;
+  margin: 6px 0 0;
+  font-size: .96rem;
+  font-weight: 500;
+  color: #ff9db8;
+}
+.gate__msg.is-ok { color: #8ef0b5; }
+.gate__submit { margin-top: 8px; }
+
+/* ---------- Questions ---------- */
+.gate__options { display: grid; gap: 12px; margin: 24px 0 6px; }
+.gate__opt {
+  width: 100%;
+  padding: 15px 22px;
+  border-radius: 16px;
+  border: 1px solid var(--stroke);
+  background: rgba(255, 255, 255, .05);
+  color: var(--silver);
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  transition: transform .3s var(--ease), border-color .3s ease, background .3s ease, box-shadow .3s ease;
+}
+.gate__opt:hover:not(:disabled) {
+  transform: translateX(6px);
+  border-color: var(--stroke-2);
+  background: rgba(255, 111, 165, .12);
+  color: #fff;
+}
+.gate__opt.is-right {
+  border-color: #6ee7a8;
+  background: rgba(110, 231, 168, .16);
+  color: #eafff5;
+  box-shadow: 0 0 0 3px rgba(110, 231, 168, .16);
+}
+.gate__opt.is-wrong {
+  border-color: #ff6b8a;
+  background: rgba(255, 107, 138, .14);
+  color: #ffe3e9;
+  animation: gateShake .45s ease;
+}
+.gate__opt:disabled { cursor: default; opacity: .95; }
+.gate__opt:disabled:not(.is-right):not(.is-wrong) { opacity: .45; }
+
+.gate__progress {
+  margin-top: 24px;
+  height: 5px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, .08);
+  overflow: hidden;
+}
+.gate__progress i {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 99px;
+  background: var(--grad-pink);
+  transition: width .5s var(--ease);
+}
+
+@media (max-width: 480px) {
+  .gate__card { border-radius: 22px; }
+  .gate__opt { padding: 13px 16px; font-size: .95rem; }
+}

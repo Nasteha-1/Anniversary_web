@@ -1,0 +1,17 @@
+{
+  "name": "Our Little Universe — Nawaal & Ayman",
+  "short_name": "Our Universe",
+  "description": "A universe made for two hearts.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#050208",
+  "theme_color": "#050208",
+  "icons": [
+    {
+      "src": "images/og-cover.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}

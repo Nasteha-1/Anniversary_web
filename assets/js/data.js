@@ -122,7 +122,7 @@ const UNIVERSE = {
 
   /* ---------------- SECRET GATE ---------------- */
   gate: {
-    password: "jaceelkeega",       // 👈 password-ka sir ah
+    passwordHash: "64cf6a0478bf5b41d60224c6e7b3b404743d3b444e6b588b2b84dbe2229181f6", // SHA-256 (password-ka lama qorin si toos ah)       // 👈 password-ka sir ah
     questions: [
       { icon: "❤️", question: "What is my name?",                    options: ["Nawaal", "Ayaan", "Hani"],                                  answer: 0 },
       { icon: "🌹", question: "What is the most special thing in our relationship?", options: ["Our memories", "Our love ❤️", "Our conversations"],   answer: 1 },

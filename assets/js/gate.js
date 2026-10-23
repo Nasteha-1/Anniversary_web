@@ -9,7 +9,7 @@
   const $$ = (sel, ctx) => Array.from((ctx || document).querySelectorAll(sel));
 
   const DEFAULTS = {
-    password: "jaceelkeega",
+    passwordHash: "64cf6a0478bf5b41d60224c6e7b3b404743d3b444e6b588b2b84dbe2229181f6",
     questions: [
       { icon: "❤️", question: "What is my name?", options: ["Nawaal", "Ayaan", "Hani"], answer: 0 },
       { icon: "🌹", question: "What is the most special thing in our relationship?", options: ["Our memories", "Our love ❤️", "Our conversations"], answer: 1 },
@@ -19,8 +19,16 @@
   };
 
   const CFG = (typeof UNIVERSE !== "undefined" && UNIVERSE.gate) ? UNIVERSE.gate : DEFAULTS;
-  const PASSWORD = String(CFG.password || DEFAULTS.password);
+  const PASSWORD_HASH = String(CFG.passwordHash || DEFAULTS.passwordHash).trim().toLowerCase();
   const QUESTIONS = (CFG.questions && CFG.questions.length) ? CFG.questions : DEFAULTS.questions;
+
+  async function sha256(text) {
+    if (!window.crypto || !window.crypto.subtle) {
+      throw new Error("This gate needs HTTPS (secure connection).");
+    }
+    const buf = await window.crypto.subtle.digest("SHA-256", new TextEncoder().encode(text));
+    return Array.from(new Uint8Array(buf)).map(function (b) { return b.toString(16).padStart(2, "0"); }).join("");
+  }
 
   const gate = $("#gate");
   if (!gate) return;
@@ -90,10 +98,13 @@
     if (input.select) input.select();
   }
 
-  function checkPassword() {
+  async function checkPassword() {
     const value = String(input.value || "").trim().toLowerCase();
-    if (!value) { failPassword("Write the secret word first, my love 💕"); return; }
-    if (value === PASSWORD.trim().toLowerCase()) {
+    if (!value) { failPassword("Write the secret word first, my love dY'"); return; }
+    let ok = false;
+    try { ok = (await sha256(value)) === PASSWORD_HASH; }
+    catch (err) { failPassword(err.message || "Could not check the password."); return; }
+    if (ok) {
       input.classList.remove("is-bad");
       input.classList.add("is-good");
       input.disabled = true;
