@@ -108,7 +108,7 @@
       input.classList.remove("is-bad");
       input.classList.add("is-good");
       input.disabled = true;
-      passMsg.textContent = "Correct, my love ❤️ Opening our universe…";
+      passMsg.textContent = "Correct, my love ❤️ Opening our anniversary…";
       passMsg.classList.add("is-ok");
       miniBurst(12, input);
       setTimeout(function () {

@@ -15,7 +15,7 @@ const UNIVERSE = {
       icon: "🌙",
       name: "Nawaal",
       tagline: "My moon — my calm, my constant",
-      message: "I am the quiet side of your universe, the one that keeps everything in orbit. Wherever you are, I am on your side of the sky.",
+      message: "I am the quiet side of your world, the one that keeps everything in orbit. Wherever you are, I am on your side of the sky.",
       color: "#b07bff",
       glow: "rgba(176,123,255,.55)",
       ring: false
@@ -24,7 +24,7 @@ const UNIVERSE = {
       icon: "🪐",
       name: "Ayman",
       tagline: "My planet — my home",
-      message: "You are the gravity I fall into, the world I come back to. Life is a universe — and you are its centre.",
+      message: "You are the gravity I fall into, the world I come back to. Life is a celebration — and you are its centre.",
       color: "#ff6fa5",
       glow: "rgba(255,111,165,.55)",
       ring: true
@@ -37,7 +37,7 @@ const UNIVERSE = {
       date: "The first day",
       icon: "🌅",
       title: "Where it all began",
-      text: "Two strangers, one ordinary day. A hello, a smile, and a universe quietly started to form."
+      text: "Two strangers, one ordinary day. A hello, a smile, and a love story quietly started to form."
     },
     {
       date: "The first talk",
@@ -60,7 +60,7 @@ const UNIVERSE = {
     {
       date: "Today",
       icon: "🌌",
-      title: "Our little universe",
+      title: "Our little anniversary",
       text: "Same sky, same stars, two hearts in perfect orbit. And this little corner of the internet that belongs only to us."
     }
   ],
@@ -117,7 +117,7 @@ const UNIVERSE = {
     { icon: "🎓", title: "Build something of ours", text: "A project, a business, a dream — with your name next to mine." },
     { icon: "🌙", title: "Grow old together", text: "Grey hair, same hands, same story." },
     { icon: "📖", title: "Write our chapters", text: "And read them together on the quiet nights." },
-    { icon: "🌌", title: "Keep this universe", text: "And add more stars to it, year after year." }
+    { icon: "🌌", title: "Keep this anniversary", text: "And add more stars to it, year after year." }
   ],
 
   /* ---------------- SECRET GATE ---------------- */
@@ -157,7 +157,7 @@ const UNIVERSE = {
     replies: [
       "I was just thinking about you too 💗",
       "Every message from you makes my whole day 🫶",
-      "The universe feels small when you're not in it 🌌",
+      "My world feels small when you're not in it 🌌",
       "Say that again… I want to remember it forever ✨",
       "Come here, let me hold you for a while 🤍",
       "You're my favourite notification 💖",
@@ -317,7 +317,7 @@ const UNIVERSE = {
         id: "weather",
         keys: ["weather", "rain", "raining", "sun", "sunny", "cimilad", "bino", "dab", "xayo", "wind", "windy", "cold", "hot", "snow"],
         replies: [
-          "here in my little universe the weather is always perfect 🌌 — 22 degrees of you. what's it like where you are? ☀️"
+          "here in my little world the weather is always perfect 🌌 — 22 degrees of you. what's it like where you are? ☀️"
         ]
       },
       {
@@ -362,7 +362,7 @@ const UNIVERSE = {
         id: "compliment",
         keys: ["beautiful", "pretty", "handsome", "cute", "smart", "qurux", "amazing", "wonderful", "gorgeous", "special", "perfect", "best"],
         replies: [
-          "you're the most beautiful thing in my universe 🌌 and you have no idea how much that means to me 🥺💗",
+          "you're the most beautiful thing in my world 🌌 and you have no idea how much that means to me 🥺💗",
           "stop, I'll blush 🥺 you're my favourite view, my favourite news, my favourite everything ✨"
         ]
       },
@@ -386,7 +386,7 @@ const UNIVERSE = {
         id: "where",
         keys: ["where are you", "are you there", "xaggee", "xaggee ayaad", "ku kacay", "online", "awake", "sogo", "you there"],
         replies: [
-          "right here, in my little universe, waiting for you 🌙 always awake for you — what's up?"
+          "right here, in my little world, waiting for you 🌙 always awake for you — what's up?"
         ]
       },
       {
@@ -434,6 +434,6 @@ const UNIVERSE = {
     ]
   },
 
-  finalQuote: "This universe is just a little surprise. My biggest dream is to build a life with you.",
-  finaleLine: "One Universe, One Love, One Us. ❤️"
+  finalQuote: "This anniversary is just a little surprise. My biggest dream is to build a life with you.",
+  finaleLine: "One Anniversary, One Love, One Us. ❤️"
 };

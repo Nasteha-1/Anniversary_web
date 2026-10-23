@@ -72,11 +72,11 @@
     makeConfetti(40);
     if (btn) {
       const label = btn.querySelector("span");
-      if (label) label.textContent = "🎉 Enter Our Universe";
+      if (label) label.textContent = "🎉 Enter Our Anniversary";
       btn.classList.remove("btn--glow");
     }
     const hint = $(".cake__hint");
-    if (hint) hint.textContent = "Waxaa dhammaad! Tag ENTER si aad u galiyo universe-ka 🌌";
+    if (hint) hint.textContent = "Waxaa dhammaad! Tag ENTER si aad u galiyo anniversary-ga 💗";
   }
 
   /* ---------- enter ---------- */

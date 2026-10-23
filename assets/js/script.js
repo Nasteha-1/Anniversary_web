@@ -410,7 +410,7 @@
     if (q) q.textContent = "“" + UNIVERSE.finalQuote + "” ❤️";
     const f = $(".finale__small");
     if (f) f.textContent = UNIVERSE.finaleLine;
-    document.title = "🌌 Our Little Universe — " + UNIVERSE.me + " & " + UNIVERSE.partner;
+    document.title = "💗 Our Anniversary — " + UNIVERSE.me + " & " + UNIVERSE.partner;
   }
 
   /* =========================================================
