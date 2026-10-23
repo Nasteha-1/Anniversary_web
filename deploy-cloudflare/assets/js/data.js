@@ -16,8 +16,8 @@ const UNIVERSE = {
       name: "Nawaal",
       tagline: "My moon — my calm, my constant",
       message: "I am the quiet side of your world, the one that keeps everything in orbit. Wherever you are, I am on your side of the sky.",
-      color: "#b07bff",
-      glow: "rgba(176,123,255,.55)",
+      color: "#5fb8ff",
+      glow: "rgba(95,184,255,.55)",
       ring: false
     },
     {
@@ -25,8 +25,8 @@ const UNIVERSE = {
       name: "Ayman",
       tagline: "My planet — my home",
       message: "You are the gravity I fall into, the world I come back to. Life is a celebration — and you are its centre.",
-      color: "#ff6fa5",
-      glow: "rgba(255,111,165,.55)",
+      color: "#7ce7ff",
+      glow: "rgba(124,231,255,.55)",
       ring: true
     }
   ],
@@ -67,12 +67,12 @@ const UNIVERSE = {
 
   /* ---------------- MEMORIES ---------------- */
   memories: [
-    { src: "images/us-01.jpg", icon: "🌅", caption: "Where it all began", note: "the beginning", a: "#7a3fb0", b: "#ff6fa5" },
+    { src: "images/us-01.jpg", icon: "🌅", caption: "Where it all began", note: "the beginning", a: "#1e6fa8", b: "#6fd3ff" },
     { src: "images/us-02.jpg", icon: "🌙", caption: "Quiet nights, long talks", note: "voice notes at 2am", a: "#3a1560", b: "#c86fa0" },
     { src: "images/us-03.jpg", icon: "🌸", caption: "Your favourite smile", note: "caught mid-laugh", a: "#8b2f6b", b: "#ffb3c7" },
     { src: "images/us-04.jpg", icon: "🌊", caption: "Our kind of calm", note: "just us, no rush", a: "#1f3f7a", b: "#6fd0ff" },
     { src: "images/us-05.jpg", icon: "☕", caption: "Coffee and conversation", note: "your order, always", a: "#5a2d82", b: "#ff8fb8" },
-    { src: "images/us-06.jpg", icon: "✨", caption: "Little spark", note: "the day it clicked", a: "#6b3fa0", b: "#ffd27a" },
+    { src: "images/us-06.jpg", icon: "✨", caption: "Little spark", note: "the day it clicked", a: "#1e6fa8", b: "#ffd27a" },
     { src: "images/us-07.jpg", icon: "🏔️", caption: "Adventures we planned", note: "next one is real", a: "#274a78", b: "#8ee6c0" },
     { src: "images/us-08.jpg", icon: "🎬", caption: "Movie nights", note: "your pick every time", a: "#4a2a70", b: "#ff7aa8" },
     { src: "images/us-09.jpg", icon: "🌅", caption: "Golden hour", note: "golden you", a: "#8a3b12", b: "#ffc36b" },
@@ -81,7 +81,7 @@ const UNIVERSE = {
     { src: "images/us-12.jpg", icon: "🎉", caption: "Celebrations", note: "us, always us", a: "#5c2a86", b: "#ffd166" },
     { src: "images/us-13.jpg", icon: "🕯️", caption: "Little moments", note: "the ones I keep", a: "#3d1f5c", b: "#ff8f7a" },
     { src: "images/us-14.jpg", icon: "🌍", caption: "Same world, same orbit", note: "distance is temporary", a: "#1c4b6b", b: "#7ee8c8" },
-    { src: "images/us-15.jpg", icon: "💫", caption: "Us, in a square", note: "frame of my heart", a: "#6b3fa0", b: "#ff6fa5" },
+    { src: "images/us-15.jpg", icon: "💫", caption: "Us, in a square", note: "frame of my heart", a: "#1e6fa8", b: "#6fd3ff" },
     { src: "images/us-16.jpg", icon: "🎶", caption: "Our song", note: "on repeat", a: "#2f1c5c", b: "#a06bff" },
     { src: "images/us-17.jpg", icon: "🏡", caption: "Home is where you are", note: "always", a: "#4a3a20", b: "#ffcf8b" },
     { src: "images/us-18.jpg", icon: "🌙", caption: "Late night talks", note: "until sunrise", a: "#231a4d", b: "#8f7bff" },
@@ -92,7 +92,7 @@ const UNIVERSE = {
     { src: "images/us-23.jpg", icon: "🧭", caption: "Always finding you", note: "in every crowd", a: "#2f4a6b", b: "#9ecbff" },
     { src: "images/us-24.jpg", icon: "🌈", caption: "After the rain", note: "still us", a: "#3f5c2f", b: "#b8ff9e" },
     { src: "images/us-25.jpg", icon: "🕊️", caption: "Peace with you", note: "rare and precious", a: "#3a5f6b", b: "#c9f0ff" },
-    { src: "images/us-26.jpg", icon: "🎈", caption: "Little wishes", note: "so many of them", a: "#6b3fa0", b: "#ff9ed2" },
+    { src: "images/us-26.jpg", icon: "🎈", caption: "Little wishes", note: "so many of them", a: "#1e6fa8", b: "#9fdcff" },
     { src: "images/us-27.jpg", icon: "❤️", caption: "Simply, us", note: "no filter", a: "#7a0f2f", b: "#ff6f91" }
   ],
 

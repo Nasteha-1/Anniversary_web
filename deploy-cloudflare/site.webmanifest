@@ -5,8 +5,8 @@
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#050208",
-  "theme_color": "#050208",
+  "background_color": "#030812",
+  "theme_color": "#030812",
   "icons": [
     {
       "src": "images/og-cover.jpg",

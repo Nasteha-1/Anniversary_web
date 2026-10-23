@@ -10,7 +10,7 @@
   overflow: hidden;
   background:
     radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, .07), rgba(255, 255, 255, .015)),
-    rgba(10, 4, 22, .72);
+    rgba(5,16,30, .72);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 30px 90px rgba(0, 0, 0, .55);
@@ -34,13 +34,13 @@
   font-size: 1.2rem;
   border: 2px solid var(--purple-700);
   background: radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .5), transparent 46%), var(--pink);
-  box-shadow: 0 0 18px rgba(255, 111, 165, .35);
+  box-shadow: 0 0 18px rgba(111,211,255, .35);
 }
 .chat__face--b {
   margin-left: -14px;
   border-color: var(--purple-500);
   background: radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .5), transparent 46%), var(--purple-500);
-  box-shadow: 0 0 18px rgba(169, 133, 232, .4);
+  box-shadow: 0 0 18px rgba(143,212,255, .4);
 }
 .chat__who { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
 .chat__names {
@@ -124,12 +124,12 @@
   font-size: 1.05rem;
   border: 1px solid var(--stroke-2);
   background: radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .45), transparent 46%), var(--purple-500);
-  box-shadow: 0 0 14px rgba(169, 133, 232, .35);
+  box-shadow: 0 0 14px rgba(143,212,255, .35);
 }
 .msg--me .msg__avatar {
   border-color: var(--stroke-2);
   background: radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .5), transparent 46%), var(--pink);
-  box-shadow: 0 0 14px rgba(255, 111, 165, .4);
+  box-shadow: 0 0 14px rgba(111,211,255, .4);
 }
 
 .msg__bubble {
@@ -147,7 +147,7 @@
 .msg__bubble--me {
   border-bottom-right-radius: 7px;
   border-color: var(--stroke-2);
-  background: linear-gradient(135deg, rgba(255, 111, 165, .30), rgba(181, 123, 255, .22));
+  background: linear-gradient(135deg, rgba(111,211,255, .30), rgba(74,168,255, .22));
   color: #fff;
 }
 .msg__text {
@@ -265,7 +265,7 @@
 .chat__chip:hover {
   transform: translateY(-2px);
   border-color: var(--stroke-2);
-  background: rgba(255, 111, 165, .14);
+  background: rgba(111,211,255, .14);
   color: #fff;
 }
 
@@ -304,7 +304,7 @@
   padding: 0;
   border: none;
   border-radius: 50%;
-  background: rgba(5, 2, 8, .78);
+  background: rgba(3,8,18, .78);
   color: #fff;
   font-size: .7rem;
   line-height: 1;
@@ -316,7 +316,7 @@
 .chat-shell.is-drop {
   outline: 2px dashed var(--pink);
   outline-offset: -6px;
-  box-shadow: 0 0 0 6px rgba(255, 111, 165, .12), 0 30px 90px rgba(0, 0, 0, .55);
+  box-shadow: 0 0 0 6px rgba(111,211,255, .12), 0 30px 90px rgba(0, 0, 0, .55);
 }
 .chat-shell.is-drop .chat__foot::before {
   content: "📸 Sawirka halkan ka soo daale";
@@ -325,7 +325,7 @@
   padding: 9px 14px;
   border-radius: 12px;
   border: 1px dashed var(--stroke-2);
-  background: rgba(255, 111, 165, .12);
+  background: rgba(111,211,255, .12);
   color: #fff;
   font-size: .78rem;
   font-weight: 600;
@@ -346,12 +346,12 @@
   font-size: 1rem;
   transition: border-color .3s ease, box-shadow .3s ease, background .3s ease;
 }
-.chat__input::placeholder { color: rgba(217, 213, 228, .45); }
+.chat__input::placeholder { color: rgba(203,226,241, .45); }
 .chat__input:focus {
   outline: none;
   border-color: var(--pink);
   background: rgba(255, 255, 255, .09);
-  box-shadow: 0 0 0 4px rgba(255, 111, 165, .16);
+  box-shadow: 0 0 0 4px rgba(111,211,255, .16);
 }
 .chat__attach {
   flex: 0 0 auto;
@@ -368,7 +368,7 @@
 }
 .chat__attach:hover {
   transform: translateY(-2px) scale(1.06);
-  background: rgba(176, 123, 255, .18);
+  background: rgba(95,184,255, .18);
   color: #fff;
   box-shadow: 0 10px 26px rgba(0, 0, 0, .35);
 }
@@ -378,7 +378,7 @@
   width: 48px; height: 48px;
   border-radius: 50%;
   border: 1px solid var(--stroke-2);
-  background: rgba(255, 111, 165, .16);
+  background: rgba(111,211,255, .16);
   color: #fff;
   font-size: 1.1rem;
   display: grid;
@@ -388,7 +388,7 @@
 .chat__send:hover {
   transform: scale(1.08);
   background: var(--grad-pink);
-  box-shadow: 0 10px 30px rgba(255, 111, 165, .35);
+  box-shadow: 0 10px 30px rgba(111,211,255, .35);
 }
 .chat__send:active { transform: scale(.96); }
 
@@ -432,7 +432,7 @@
 .msg__act:hover {
   transform: translateY(-2px);
   border-color: var(--stroke-2);
-  background: rgba(255, 111, 165, .18);
+  background: rgba(111,211,255, .18);
   color: #fff;
 }
 

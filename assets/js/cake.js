@@ -15,7 +15,7 @@
   const sinceEl = $("#cakeSince");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  const COLORS = ["#ff6fa5", "#ffa8c5", "#b57bff", "#ffd166", "#7ee8c8", "#ffffff", "#ff8fb8"];
+  const COLORS = ["#6fd3ff", "#b7ecff", "#4aa8ff", "#ffffff", "#8fd4ff", "#7ee8c8", "#2f9ee0"];
 
   /* ---------- confetti ---------- */
   function makeConfetti(count) {

@@ -9,8 +9,8 @@
   place-items: center;
   padding: clamp(18px, 5vw, 40px);
   background:
-    radial-gradient(120% 90% at 50% 0%, rgba(45, 16, 96, .92), transparent 62%),
-    radial-gradient(90% 70% at 50% 100%, rgba(224, 71, 127, .38), transparent 64%),
+    radial-gradient(120% 90% at 50% 0%, rgba(8,36,61, .92), transparent 62%),
+    radial-gradient(90% 70% at 50% 100%, rgba(47,158,224, .38), transparent 64%),
     var(--black);
   overflow-y: auto;
   transition: opacity .8s var(--ease), visibility .8s;
@@ -30,7 +30,7 @@
   border-radius: 28px;
   background:
     radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, .08), rgba(255, 255, 255, .02)),
-    rgba(12, 5, 26, .82);
+    rgba(5,18,32, .82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 30px 90px rgba(0, 0, 0, .6);
@@ -99,11 +99,11 @@
   text-align: center;
   transition: border-color .3s ease, box-shadow .3s ease, background .3s ease;
 }
-.gate__input::placeholder { color: rgba(217, 213, 228, .35); letter-spacing: .2em; }
+.gate__input::placeholder { color: rgba(203,226,241, .35); letter-spacing: .2em; }
 .gate__input:focus {
   outline: none;
   border-color: var(--pink);
-  box-shadow: 0 0 0 4px rgba(255, 111, 165, .18);
+  box-shadow: 0 0 0 4px rgba(111,211,255, .18);
   background: rgba(255, 255, 255, .09);
 }
 .gate__input.is-bad { border-color: #ff6b8a; box-shadow: 0 0 0 4px rgba(255, 107, 138, .16); }
@@ -113,7 +113,7 @@
   margin: 6px 0 0;
   font-size: .96rem;
   font-weight: 500;
-  color: #ff9db8;
+  color: #9fdcff;
 }
 .gate__msg.is-ok { color: #8ef0b5; }
 .gate__submit { margin-top: 8px; }
@@ -136,7 +136,7 @@
 .gate__opt:hover:not(:disabled) {
   transform: translateX(6px);
   border-color: var(--stroke-2);
-  background: rgba(255, 111, 165, .12);
+  background: rgba(111,211,255, .12);
   color: #fff;
 }
 .gate__opt.is-right {
@@ -148,7 +148,7 @@
 .gate__opt.is-wrong {
   border-color: #ff6b8a;
   background: rgba(255, 107, 138, .14);
-  color: #ffe3e9;
+  color: #e3f7ff;
   animation: gateShake .45s ease;
 }
 .gate__opt:disabled { cursor: default; opacity: .95; }

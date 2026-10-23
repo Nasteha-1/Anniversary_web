@@ -342,12 +342,12 @@
     const wrap = $("#memGrid");
     if (!wrap) return;
     wrap.innerHTML = UNIVERSE.memories.map(function (m, i) {
-      const ph = '<div class="mem__ph" style="--ph-a:' + (m.a || "#6b3fa0") + ';--ph-b:' + (m.b || "#ff6fa5") + '">' + m.icon + '<span>add your photo</span></div>';
+      const ph = '<div class="mem__ph" style="--ph-a:' + (m.a || "#1e6fa8") + ';--ph-b:' + (m.b || "#6fd3ff") + '">' + m.icon + '<span>add your photo</span></div>';
       const img = m.src
         ? '<img class="mem__img" src="' + m.src + '" alt="' + m.caption + '" loading="lazy" onerror="this.remove()" />'
         : '';
       return '' +
-        '<figure class="mem" data-reveal data-delay="' + (i % 3) + '" data-src="' + (m.src || "") + '" data-cap="' + m.caption + '" data-icon="' + m.icon + '" data-a="' + (m.a || "#6b3fa0") + '" data-b="' + (m.b || "#ff6fa5") + '" tabindex="0" role="button" aria-label="' + m.caption + '">' +
+        '<figure class="mem" data-reveal data-delay="' + (i % 3) + '" data-src="' + (m.src || "") + '" data-cap="' + m.caption + '" data-icon="' + m.icon + '" data-a="' + (m.a || "#1e6fa8") + '" data-b="' + (m.b || "#6fd3ff") + '" tabindex="0" role="button" aria-label="' + m.caption + '">' +
           ph + img +
           '<span class="mem__veil"></span>' +
           '<span class="mem__zoom">⤢</span>' +
